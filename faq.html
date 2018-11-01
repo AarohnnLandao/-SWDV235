@@ -1,0 +1,104 @@
+﻿<!--Joshua Schmidt-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DSK Gaming</title>
+	<link rel="icon" href="images/tabIcon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	
+	<script src="js/faqbuttons.js"></script>
+
+  </head>
+
+  <body>
+
+  <div id="section1"> <!--specifies the "page" for parallax-->
+  <div class="section section1"> <!-- Section caller (GENERAL)(SPECIFIC) -->
+  
+  <div class="navRow"> <!-- reserves space for the nav-->
+
+		<!---			---			--- Nav Start ---			---			--->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+           <span class="sr-only"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+			<a class="navbar-brand" href="index.html"><img src="images/DSK Logo.png"> DSKGaming</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+           <li><a href="index.html#section1">Home</a></li>
+           <li><a href="index.html#section2">About</a></li>
+           <li><a href="dps.html">DPS</a></li>
+		   <li><a href="news.aspx">News</a></li>
+		   <li><a href="contact.aspx">Contact</a></li>
+		   <li class="active"><a href="faq.html">FAQ</a></li>		
+         </ul>
+        </div>
+    </div>
+  </nav>
+	</div>
+
+	<!---			---			--- Start Banner ---			---			--->
+	<div class="row banner">
+		<div class="col-sm-12"><img src="images/DSK Branding.png" alt="DSK LOGO" class="logo"></div>
+	</div>
+
+	<!---			---			--- Start Pages ---			---			--->
+	<div class="row content"><!--FAQ questions and drop-downs -->
+		<div class="col-sm-3"></div>
+		<div class="col-sm-8 col" style="text-align: left;">
+		 <p><button onclick="faqButton('item1')"><span class="glyphicon glyphicon-triangle-bottom"></span></button>Does DSK gaming have an activity requirement?</p>
+		 <div id="item1" class="faqFade"><p>No, DSK recognizes that most of our members have places to be, we don't police activity.</p></div><br>
+		 <p><button onclick="faqButton('item2')"><span class="glyphicon glyphicon-triangle-bottom"></span></button>Does DSK gaming have an age requirement?</p>
+		 <div id="item2" class="faqFade"><p>Yes, All DSK members must be over the age of 18. preferably over the age of 21.</p></div><br>
+		 <p><button onclick="faqButton('item3')"><span class="glyphicon glyphicon-triangle-bottom"></span></button>Do I have to play the same games?</p>
+		 <div id="item3" class="faqFade"><p>No, We play many many games. If you aren't playing a game we are playing at the moment, you are still welcome to join us.</p></div><br>
+		 <p><button onclick="faqButton('item4')"><span class="glyphicon glyphicon-triangle-bottom"></span></button>Does DSK gaming require me to be in voice chat?</p>
+		 <div id="item4" class="faqFade"><p>No, while we prefer you to stop in and say hi, you are not required to join in the voice chat.</p></div><br>	 
+		 
+		</div>
+	</div>
+
+	<div class="row content">
+	 
+	</div>
+
+	</div> <!--id section-->
+	</div> <!--class section-->
+
+		
+</body>
+<footer>
+	<p>© Copyright 2016 DSKGaming all rights reserved.</p>
+	<a href="#section1"><p>Top of Page</p><span class="glyphicon glyphicon-home"></a>
+</footer>
+	<!-- Tooltip jQuery -->
+	<script>
+		$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

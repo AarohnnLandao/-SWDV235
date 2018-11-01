@@ -1,0 +1,199 @@
+/*Joshua Schmidt*/
+
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif, serif;
+	margin: 0;		
+	background-color: #303030;
+	color: white;
+	text-align: center;
+}
+
+/*---			---			--- Style for the section coloring ---			---*/
+.section {
+	width: 100%;
+	height: 100vh;
+}
+
+.section2 {
+	background-color: #2a5c9e;
+}
+
+/*---			---			--- Style for row and column defaults ---			---*/
+.navRow {
+	width: 100%;
+	height: 3em;	
+}
+.row {	
+	height: 35%;
+			/*border: dashed 1px rgb(255,50,50);*/
+}
+
+.col {	
+			/*order: dashed 1px rgb(50,150,255);*/
+}
+
+/*---			---			---	Style for banner and logo ---			---*/
+.banner {
+	background-image: url("../images/Backgroundbanner.jpg");
+	max-height: 200px;
+	margin-bottom: 1em;
+}
+
+.banner .col-sm-12 {
+	text-align: center;
+}
+
+.logo {	
+	max-width: 100%;
+	max-height: 220px;
+}
+/*---			---			--- Style for nav logo---			---*/
+.navbar-brand img{
+	height: 35px; 
+	float: left;
+	margin-right: 5px;	
+	margin-top: -4px;
+	padding-bottom: 8px;	
+}
+
+
+/*---			---			--- Style for content ---			---*/
+.intro {
+	text-align: center;	
+	height: 20%;   
+    top: 30%;	
+}
+
+.buffer {
+	margin-left: 3%;
+}
+
+h1 {	
+	font-size: 1.5em;
+	text-align: center;
+	
+}
+
+content h1{
+	float: left;
+	position: absolute;
+    left: 100px;
+    top: 150px;	
+}
+
+.content img {
+	float: right;
+	min-width: 480px;
+	height: 230px;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+
+.content img:hover {
+	transform: scale(1.05,1.05);
+	
+}
+
+.section2 .content {
+	margin-top: 2em;
+}
+
+.section2 h1 {
+	font-size: 2em;
+}
+
+.section2 .row {
+	height: 25%;
+}
+
+.btn {
+	font-size: 1em;
+	width: 150px;
+	height: 50px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+.textarea {
+    width: 80%;
+    height: 5em;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+form {
+	color: black;
+	text-align: left;
+}
+
+form input {
+	margin-top: 1em;
+}
+
+button {
+	background-color: #2a5c9e;
+	border-radius: .1em;
+	border: none;
+}
+
+.faqFade {
+	font-style: italic;
+	color: rgba(255,255,255,.7);	
+}
+
+.imgList {
+	display: none;
+}
+/*---			---			--- Style for footer ---			---*/
+footer {
+	background-color: rgb(0,0,0);
+	text-align: center;
+	font-size: .8em;	
+}
+
+footer a{
+	color: rgba(255,255,255,.5);
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+
+.desktop {
+	display: none;
+}
+
+@media screen and (min-width: 1320px){
+	.desktop {
+		display: inline;
+	}
+}
